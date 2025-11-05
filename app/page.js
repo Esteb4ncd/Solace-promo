@@ -6,7 +6,9 @@ export default function Home() {
       {/* Navigation */}
       <nav className={styles.nav}>
         <div className={styles.navContent}>
-          <a href="#" className={styles.logo}>Solace</a>
+          <a href="#" className={styles.logo}>
+            <img src="/logo.png" alt="Solace logo" />
+          </a>
           <div className={styles.navLinks}>
             <a href="#features">Features</a>
             <a href="#how-it-works">How It Works</a>
@@ -29,17 +31,7 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.heroImage}>
-            {/* PLACEHOLDER: Hero Image
-            Replace this div with an image showing:
-            - A phone/mockup of the Solace app
-            - The mascot character looking strong and healthy
-            - UI showing XP, streaks, and exercises
-            - Recommended size: 600x800px or similar ratio
-            - Style: Modern, clean, vibrant colors matching the app theme */}
-            <div className={styles.imagePlaceholder}>
-              <p>Hero Image Placeholder</p>
-              <small>App mockup with mascot and UI</small>
-            </div>
+            <img src="/SolaceMockup.png" alt="Solace app mockup with mascot and UI" />
           </div>
         </div>
       </section>
@@ -83,17 +75,7 @@ export default function Home() {
             options beyond painkillers or unhealthy coping habits.
           </p>
           <div className={styles.problemImage}>
-            {/* PLACEHOLDER: Problem Image
-            Replace this div with an image showing:
-            - Iron workers in a challenging work environment
-            - Someone showing signs of physical strain or fatigue
-            - Could be a realistic photo or illustration
-            - Recommended size: 800x600px
-            - Style: Emphasize the physical demands and challenges */}
-            <div className={styles.imagePlaceholder}>
-              <p>Problem Image Placeholder</p>
-              <small>Iron workers facing physical strain</small>
-            </div>
+            <img src="/SolaceProblemStatement.png" alt="Iron workers facing physical strain" />
           </div>
         </div>
       </section>
@@ -118,17 +100,7 @@ export default function Home() {
           {/* Mascot Feature */}
           <div className={styles.featureCard}>
             <div className={styles.featureImage}>
-              {/* PLACEHOLDER: Mascot Feature Image
-              Replace this div with an image showing:
-              - The mascot character in different states (healthy vs injured)
-              - Before/after comparison or progression states
-              - Visual representation of the mascot thriving when consistent
-              - Recommended size: 600x600px
-              - Style: Character illustration, friendly and motivating */}
-              <div className={styles.imagePlaceholder}>
-                <p>Mascot Feature Image</p>
-                <small>Mascot in healthy vs injured states</small>
-              </div>
+              <img className={styles.mascotImage} src="/hurttostrong.png" alt="Mascot progression from hurt to strong" />
             </div>
             <div className={styles.featureText}>
               <h3 className={styles.featureTitle}>Your Wellness Mascot</h3>
@@ -153,34 +125,14 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.featureImage}>
-              {/* PLACEHOLDER: Checklist Feature Image
-              Replace this div with an image showing:
-              - App screen showing the personalized daily checklist
-              - UI mockup with exercises listed
-              - XP rewards visible
-              - Recommended size: 600x600px
-              - Style: Clean app interface mockup */}
-              <div className={styles.imagePlaceholder}>
-                <p>Checklist Feature Image</p>
-                <small>App UI showing personalized checklist</small>
-              </div>
+              <img src="/checklistmockup.png" alt="App UI showing personalized checklist" />
             </div>
           </div>
 
           {/* Mental Recovery Feature */}
           <div className={styles.featureCard}>
             <div className={styles.featureImage}>
-              {/* PLACEHOLDER: Mental Recovery Image
-              Replace this div with an image showing:
-              - Meditation/breathing exercise visualization
-              - Peaceful, calming scene
-              - Could show app interface for mental wellness tools
-              - Recommended size: 600x600px
-              - Style: Calming, zen-like, peaceful colors */}
-              <div className={styles.imagePlaceholder}>
-                <p>Mental Recovery Image</p>
-                <small>Breathing/meditation tools UI</small>
-              </div>
+              <img src="/breathingmockup.png" alt="Breathing and meditation tools UI" />
             </div>
             <div className={styles.featureText}>
               <h3 className={styles.featureTitle}>Mental Recovery Tools</h3>
@@ -204,35 +156,14 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.featureImage}>
-              {/* PLACEHOLDER: Exercise Catalogue Image
-              Replace this div with an image showing:
-              - App screen with exercise categories
-              - Different body areas highlighted
-              - Exercise library interface
-              - Recommended size: 600x600px
-              - Style: Clear, organized app interface */}
-              <div className={styles.imagePlaceholder}>
-                <p>Exercise Catalogue Image</p>
-                <small>Exercise library with categories</small>
-              </div>
+              <img src="/allphysicalmockup.png" alt="Exercise library with categorized exercises" />
             </div>
           </div>
 
           {/* XP & Streak Feature */}
           <div className={styles.featureCard}>
             <div className={styles.featureImage}>
-              {/* PLACEHOLDER: XP & Streak Image
-              Replace this div with an image showing:
-              - Visual representation of XP system
-              - Streak counter
-              - Level progression
-              - Mascot leveling up/getting stronger
-              - Recommended size: 600x600px
-              - Style: Gamified, exciting, progress-oriented */}
-              <div className={styles.imagePlaceholder}>
-                <p>XP & Streak Image</p>
-                <small>Gamification system visualization</small>
-              </div>
+              <img src="/streakmockup.png" alt="Gamification visualization with XP and streaks" />
             </div>
             <div className={styles.featureText}>
               <h3 className={styles.featureTitle}>XP & Streak System</h3>
@@ -249,7 +180,7 @@ export default function Home() {
       </section>
 
       {/* Value Proposition Section */}
-      <section className={styles.valueSection}>
+      <section id="about" className={styles.valueSection}>
         <div className={styles.sectionContent}>
           <h2 className={styles.sectionTitle}>
             Made for iron workers, by understanding iron workers
@@ -261,17 +192,7 @@ export default function Home() {
             habits in a way that's practical, enjoyable, and stigma-free.
           </p>
           <div className={styles.valueImage}>
-            {/* PLACEHOLDER: Value Proposition Image
-            Replace this div with an image showing:
-            - Iron worker using the app on their phone
-            - Success story visualization
-            - Before/after recovery journey
-            - Recommended size: 800x600px
-            - Style: Inspiring, showing transformation/recovery */}
-            <div className={styles.imagePlaceholder}>
-              <p>Value Proposition Image</p>
-              <small>Iron worker using Solace app</small>
-            </div>
+            <img src="/SolaceValueProp.png" alt="Iron worker using Solace app" />
           </div>
         </div>
       </section>
@@ -279,14 +200,14 @@ export default function Home() {
       {/* Footer */}
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
-          <div className={styles.logo}>Solace</div>
+          <div className={styles.logo}>
+            <img src="/logo.png" alt="Solace logo" />
+          </div>
           <p>Making self-care practical, personal, and fun.</p>
           <div className={styles.footerLinks}>
             <a href="#features">Features</a>
             <a href="#how-it-works">How It Works</a>
             <a href="#about">About</a>
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
           </div>
         </div>
       </footer>

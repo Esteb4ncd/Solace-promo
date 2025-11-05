@@ -18,7 +18,7 @@
   width: 100%;
   min-height: 100vh;
   background: var(--background);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -113,10 +113,10 @@
 }
 
 .heroContent {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.9fr 1.1fr;
   gap: 64px;
   align-items: center;
 }
@@ -125,6 +125,12 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  align-items: flex-start;
+  max-width: 640px;
+  margin-left: 10px;
+  position: relative;
+  z-index: 2;
+  transform: translateX(120px);
 }
 
 .heroTitle {
@@ -191,6 +197,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.heroImage img {
+  width: 100%;
+  max-width: 2500px;
+  height: auto;
 }
 
 .imagePlaceholder {
@@ -266,6 +278,12 @@
   justify-content: center;
 }
 
+.problemImage img {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+}
+
 /* Solution Section */
 .solutionSection {
   padding: 120px 0;
@@ -332,6 +350,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.featureImage img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
+
+.featureImage .mascotImage {
+  max-width: 160px;
+  width: auto;
 }
 
 .featureText {
@@ -446,6 +475,12 @@
   justify-content: center;
 }
 
+.valueImage img {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+}
+
 /* Final CTA Section */
 .finalCTASection {
   padding: 140px 0;
@@ -491,6 +526,18 @@
 .footer .logo {
   color: var(--white);
   margin-bottom: 16px;
+}
+
+.nav .logo img {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+.footer .logo img {
+  height: 32px;
+  width: auto;
+  display: inline-block;
 }
 
 .footer p {
@@ -539,6 +586,11 @@
   .primaryButton,
   .secondaryButton {
     width: 100%;
+  }
+
+  .heroText {
+    margin-left: 0;
+    transform: none;
   }
 
   .featureCard {
